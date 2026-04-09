@@ -2,8 +2,6 @@
 
 # Getting Started with MeluXina
 
-## About this training
-
 This training is given in the context of the [Scynergy 2026 event](https://www.scynergy.events/). It offers to the participants a quick overview of the different ways to access and use [MeluXina supercomputer](https://docs.lxp.lu/system/overview/). 
 
 It has been developed by the **Supercomputing Application Services** group at [**LuxProvide**](https://luxprovide.lu) in the context of the [**EPICURE project**](https://epicure-hpc.eu/).
@@ -37,7 +35,7 @@ Today's training is composed of:
 
 
 
-
+-----------------------------------
 
 ## 👨‍🏫 Part 1 - Presentation: Short introduction to HPC and MeluXina
 
@@ -64,9 +62,14 @@ Click on the image below to download the slides of the presentation:
 
 [![Slides](images/slides.png){ width="640" }](files/Getting_Started_with_MeluXina.pdf)
 
+-----------------------------------
 
 ## 🔑 Part 2 - Hands-on: Connections to MeluXina
 
+-----------------------------------
+
 ## 🏙️ Part 3 - Hands-on: Urban wind simulation and visualization
+
+-----------------------------------
 
 ## 🧠 Part 4 - Hands-on: PyTorch notebook with JupyterLab

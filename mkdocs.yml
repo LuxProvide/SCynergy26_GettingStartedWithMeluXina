@@ -5,93 +5,92 @@ site_author: Xavier Besseron
 site_dir: public
 
 nav:
-  - Tutorial: 'index.md'
+    - Getting Started with MeluXina: "index.md"
 
 exclude_docs: |
-  *.backup
+    *.backup
 
-  # Configuration
+    # Configuration
 # strict: true
-
 validation:
-  omitted_files: warn
-  absolute_links: warn
-  unrecognized_links: warn
+    omitted_files: warn
+    absolute_links: warn
+    unrecognized_links: warn
 
 theme:
-  #include_homepage_in_sidebar: False
-  #navigation_depth: 4
-  #collapse_navigation: True
-  #titles_only: False
-  #sticky_navigation: True
-  name: material
-  logo: assets/LuxProvide_logo_white.svg
-  favicon: assets/favicon.png
-  custom_dir: overrides
-  language: en
-  features:
-    - navigation.expand
-    - toc.integrate
-    - content.code.copy
-    - content.code.select
-    #- navigation.tabs
-    #- navigation.sections
-    #- navigation.path
+    #include_homepage_in_sidebar: False
+    #navigation_depth: 4
+    #collapse_navigation: True
+    #titles_only: False
+    #sticky_navigation: True
+    name: material
+    logo: assets/LuxProvide_logo_white.svg
+    favicon: assets/favicon.png
+    custom_dir: overrides
+    language: en
+    features:
+        - navigation.expand
+        - toc.integrate
+        - content.code.copy
+        - content.code.select
+        #- navigation.tabs
+        #- navigation.sections
+        #- navigation.path
 
 plugins:
-  - search
-  - progress
-  - include-markdown
-  - open-in-new-tab
+    - search
+    - progress
+    - include-markdown
+    - open-in-new-tab
 
 extra_css:
-  - stylesheets/extra.css
+    - stylesheets/extra.css
 
 markdown_extensions:
-  - attr_list
-  - md_in_html
-  - tables
-  - admonition
-  - toc:
-      permalink: true
-  - codehilite:
-      guess_lang: true
-  - footnotes
-  - markdown_include.include:
-      base_path: docs
-  - markdown.extensions.admonition
-  - meta
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.details
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      social_url_shorthand: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.tabbed
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.details
-  - pymdownx.superfences:
-      preserve_tabs: true
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.keys
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
+    - attr_list
+    - md_in_html
+    - tables
+    - admonition
+    - toc:
+          permalink: true
+    - codehilite:
+          guess_lang: true
+    - footnotes
+    - markdown_include.include:
+          base_path: docs
+    - markdown.extensions.admonition
+    - meta
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.details
+    - pymdownx.magiclink:
+          repo_url_shorthand: true
+          social_url_shorthand: true
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.tabbed
+    - pymdownx.smartsymbols
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.details
+    - pymdownx.superfences:
+          preserve_tabs: true
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.keys
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
