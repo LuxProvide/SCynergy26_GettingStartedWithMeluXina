@@ -28,7 +28,7 @@ Then, you have to follow the **link in the email**, use your temporary credentia
 
 ??? abstract "Online Documentation"
 
-    [Get your service desk password](https://docs.lxp.lu/first-steps/connecting/#get-your-service-desk-password)
+    - [Get your service desk password](https://docs.lxp.lu/first-steps/connecting/#get-your-service-desk-password)
 
 
 ---
@@ -73,8 +73,8 @@ Configuring your SSH access to MeluXina requires the following steps that have t
 
 ??? abstract "Online Documentation"
 
-    [Generating an SSH key](https://docs.lxp.lu/first-steps/connecting/#generating-an-ssh-key-pair)
-    [Uploading your public SSH key](https://docs.lxp.lu/first-steps/connecting/#upload-your-public-ssh-key)
+    - [Generating an SSH key](https://docs.lxp.lu/first-steps/connecting/#generating-an-ssh-key-pair)
+    - [Uploading your public SSH key](https://docs.lxp.lu/first-steps/connecting/#upload-your-public-ssh-key)
 
 ### Connection to the MeluXina login node
 
@@ -134,7 +134,27 @@ You made it! You're connected to the MeluXina supercomputer.
 
 ??? abstract "Online documentation"
 
-    [Connect to MeluXina](https://docs.lxp.lu/first-steps/connecting/#connect-to-meluxina)
+    - [Connect to MeluXina](https://docs.lxp.lu/first-steps/connecting/#connect-to-meluxina)
+
+### Testing the command line
+
+This training will not teach you how to use the command line. Nevertheless, there are a few commands that you can easily try. Just type one of the following command and then `Enter` to see the output.
+
+- Who are you? `whoami`, `echo $USER`, `id` 
+- What time is it? `date`
+- On what computer are you? `hostname`, `uname -a`, `lsb_release -a`
+- Where are you on the computer? `pwd`
+- What are the files in your home directory? `ls $HOME`
+
+One of the important command you need to know on MeluXina is `myquota`. It shows the **compute and data allocations** for each of your projects.
+
+![Output of myquota](images/myquota.png){.center}
+
+That's it for now. The submission of computation jobs on MeluXina will be shown in the [next part](urban_wind_simulation.md) of the training. You can leave your command line session using the `exit` command. 
+
+??? abstract "Online documentation"
+
+    - [Basic Linux](https://docs.lxp.lu/first-steps/basic_linux/)
 
 ---
 
@@ -157,7 +177,10 @@ When available, you will be able to connect by:
     - **Desktop**: Virtual machine access
     - **Graphical applications**: Run GUI applications directly from the portal
 
-For more information, see the [Open OnDemand documentation](https://docs.lxp.lu/web_services/open_ondemand/howtoconnect/).
+??? abstract "Online documentation"
+
+    - [Open OnDemand documentation](https://docs.lxp.lu/web_services/open_ondemand/howtoconnect/)
+
 
 ---
 

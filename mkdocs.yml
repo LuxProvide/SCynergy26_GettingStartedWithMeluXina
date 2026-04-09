@@ -5,15 +5,14 @@ site_author: Xavier Besseron
 site_dir: public
 
 nav:
-    - Overview: index.md
-    - 1. Configuring your access to MeluXina: connections_meluxina.md
-    - 2. Urban wind simulation and visualization: urban_wind_simulation.md
-    - 3. PyTorch notebook with JupyterLab: pytorch_notebook.md
+    - 🏠 Overview: index.md
+    - 1️⃣ Configuring your access to MeluXina: connections_meluxina.md
+    - 2️⃣ Urban wind simulation and visualization: urban_wind_simulation.md
+    - 3️⃣ PyTorch notebook with JupyterLab: pytorch_notebook.md
 
 exclude_docs: |
     *.backup
 
-    # Configuration
 # strict: true
 validation:
     omitted_files: warn
