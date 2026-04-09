@@ -19,7 +19,7 @@ It consists of three main steps:
 ![Onboarding email](images/onboarding_email.png){ width="520" align="right" }
 
 If this is the first time that you're accessing MeluXina, you have received an email with your login information.
-This email (example on the right) includes two important pieces of information to set up your account:
+This email with subject "New LuxProvide Account" (example on the right) includes two important pieces of information to set up your account:
 
 - Your **account username**, in the format `u10XXXX`
 - Your **token** (temporary password), in the format `123456`
