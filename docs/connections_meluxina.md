@@ -165,7 +165,7 @@ It serves as a web-based gateway to the high-performance computing (HPC) environ
 
 Follow these steps to access the **MeluXina Open OnDemand web-portal**:
 
-1. Open the url of the web-portal: [https://portal.lxp.lu/](https://portal.lxp.lu/). 
+1. Open the url of the web-portal: [**https://portal.lxp.lu/**](https://portal.lxp.lu/). 
 2. Enter your **username** (`u10XXXX`) and **password** (set during [onboarding](#setup-your-service-desk-account))
 3. If you have enabled **2FA**, you'll be prompted for a one-time code
 

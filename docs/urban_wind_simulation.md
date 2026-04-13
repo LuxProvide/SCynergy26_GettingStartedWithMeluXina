@@ -23,10 +23,14 @@ This step is done using the shell access via a terminal.
 
 ### Shell Access
 
-👉 Open a shell on MeluXina supercomputer. You can use your prefered method among the of the two options configured in the [previous part](connections_meluxina.md):
+👉 Open a shell on MeluXina supercomputer. 
 
-- [Direct shell access via SSH](connections_meluxina.md#command-line-access-using-ssh)
-- [Shell access via the web-portal](connections_meluxina.md#web-portal-access)
+!!! tip
+
+    You can use your prefered method among the of the two options configured in the [previous part](connections_meluxina.md):
+    
+    - [Direct shell access via SSH](connections_meluxina.md#command-line-access-using-ssh)
+    - [Shell access via the web-portal](connections_meluxina.md#web-portal-access)
 
 Once connected, you should see the MeluXina welcome banner:
 
@@ -151,13 +155,51 @@ squeue
 
 ## ▶️ Post-processing the simulation output
 
+Once the execution of the simulation is over, we can proceed to the analysis of the results.
+This step is done interactively using the [ParaView visualization software](https://www.paraview.org/), started from the MeluXina web-portal.
+
+### Open ParaView
+
+👉 Start the MeluXina web-portal: [**https://portal.lxp.lu/**](https://portal.lxp.lu/). 
+
+!!! tip
+
+    If needed, follow the instructions of the [previous part](connections_meluxina.md):
+    
+    - [Web-portal access](connections_meluxina.md#web-portal-access)
+
+👉 Open the ParaView application.
+
+1. Click on the [ParaView application on the web-portal](https://portal.lxp.lu/pun/sys/dashboard/batch_connect/sys/bc_meluxina_paraview/session_contexts/new).
+2. Use the settings defined below and click the **Launch** button.
+![Paraview settings](images/ood_paraview_settings.png){.center}
+3. Wait for job to run and then click the **Launch ParaView** button as shown below.
+![Paraview settings](images/ood_paraview_job.png){.center}
+
+You now have the ParaView software running on a MeluXina compute node. 
+The graphical interface is streamed in real time to your laptop. 
+You can use it as any other graphical application, but keep in mind that there can be some additional latency when using a busy wifi network.
+
 ### Load the simulation results
 
-![](images/paraview_load_state-1.png){.center}
+We will now open the results of the urban wind simulation in Paraview.
 
-![](images/paraview_load_state-2.png){.center}
+👉 In the Paraview menu **File**, click **Load State...**
 
-![](images/paraview_philharmonie.png){.center}
+![Paraview load state](images/paraview_load_state-1.png){.center}
+
+!!! info "Finding your simulation results"
+
+    - Navigate through your files to locate the results of your simulation. 
+    - They should be located in `/project/home/p201259/workspaces/u10XXXX/wind_philharmonie-447ZZZZ`, with
+        - `u10XXXX` being your actual username;
+        - `447ZZZZ` being the job ID of your submitted job.
+    - In this directory, open the file named **`philharmonie.pvsm`**.
+
+Then, make sure to use the settings below:
+![Paraview load state](images/paraview_load_state-2.png){.center}
+
+![Urban Wind around the Philharmonie in Paraview](images/paraview_philharmonie.png){.center}
 
 ### Create a video of the results
 
