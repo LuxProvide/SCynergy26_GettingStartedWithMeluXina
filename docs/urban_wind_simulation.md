@@ -177,7 +177,7 @@ To facilitate this process within the HPC environment, ParaView is launched dire
     
     - [Web-portal access](connections_meluxina.md#web-portal-access)
 
-👉 Open the ParaView application.
+👉 Open the **ParaView** application.
 
 1. Click on the [ParaView application on the web-portal](https://portal.lxp.lu/pun/sys/dashboard/batch_connect/sys/bc_meluxina_paraview/session_contexts/new).
 2. Use the settings defined below and click the **Launch** button.
