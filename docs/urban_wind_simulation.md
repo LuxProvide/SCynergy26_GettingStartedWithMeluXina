@@ -4,9 +4,9 @@
 
 ![Wind on the Philharmonie](images/philharmonie-rt.png)
 
-In this part, you will get a quick overview of an HPC workflow. 
-You will work with a simplified example of a Computational Fluid Dynamics (CFD) simulation of the **urban wind around the Philharmonie of Luxembourg**.
-This workflow is designed for you to practice the different ways to access and use the [MeluXina supercomputer](https://docs.lxp.lu/system/overview/). 
+In this part, you will get a quick overview of a typical High-Performance Computing (HPC) workflow. You will work with a simplified yet realistic example of a Computational Fluid Dynamics (CFD) simulation focusing on the **urban wind patterns around the Philharmonie of Luxembourg**. 
+
+This hands-on workflow is specifically designed for you to practice the essential steps involved in modern scientific computing: accessing the system, submitting parallel jobs, and post-processing large datasets. Through this exercise, you will learn the different ways to interact with and utilize the resources of the [MeluXina supercomputer](https://docs.lxp.lu/system/overview/), gaining practical experience in a real-world HPC environment.
 You will proceed to the following steps:
 
 1. [Step 1: Submit a batch job for a parallel CFD simulation and monitor its execution](#submit-of-a-parallel-cfd-simulation-monitor-execution)
@@ -17,11 +17,15 @@ You will proceed to the following steps:
 
 ## ▶️ Submit of a parallel CFD simulation & monitor execution
 
-The execution of large parallel computing jobs is usually done in **non-interactive mode** (or batch) using a submission script.
-In this manner, the computation job is queued for execution on the system and will be executed as soon as resources are available.
-Hence, the user does not have to stay connected during the actual execution which can take place at any time (e.g., night or week-end).
+The execution of large parallel computing jobs in High-Performance Computing (HPC) environments is almost exclusively performed in **non-interactive mode**, commonly referred to as **batch mode**, utilizing a dedicated submission script. Unlike interactive sessions where a user directly controls the computation in real-time, batch jobs are submitted to a job scheduler (such as Slurm) and placed in a queue. The system then manages the allocation of necessary resources—such as CPU cores, memory, and time—and initiates the execution once the requested resources become available.
 
-This step is done using the shell access via a terminal.
+This approach offers significant flexibility and efficiency for complex simulations:
+
+- **Resource Optimization**: It ensures that shared computing resources are utilized optimally by running multiple jobs in parallel or sequentially without manual intervention.
+- **Decoupling Execution from User Presence**: Crucially, the user does not need to maintain an active connection during the execution phase. This allows heavy computations, which may take minutes or even hours, to proceed in the background without tying up a user's terminal or internet connection.
+- **Flexibility**: Jobs can be scheduled to run at any time, including nights, weekends, or periods of lower system load, ensuring that critical research tasks are completed without disrupting active users.
+
+This submission process is initiated and managed via a standard **shell access** environment through a command-line terminal.
 
 ### Shell Access
 
@@ -130,7 +134,7 @@ sbatch /project/home/p201259/materials/14April_GettingStartedWithMeluXina/wind_p
 
 ### Execution monitoring
 
-Your HPC job is now queued on MeluXina supercomputer. You can monitor its status using the Slurm command `squeue`.
+Your HPC job is now queued on the MeluXina supercomputer and is waiting for available compute resources. To keep track of its progress, you can monitor its status in real-time using the Slurm command-line interface tool `squeue`. This command lists your active jobs along with key details such as the job ID, the number of resources allocated, the current state of the job, and the node it is running on (or will run on). By running this command periodically, you can verify that your job is accepted by the scheduler, observe its transition from "PENDING" to "RUNNING," and eventually confirm its completion.
 
 👉 Run the `squeue` command to see the status of your job:
 ```
@@ -159,8 +163,9 @@ squeue
 
 ## ▶️ Post-processing the simulation output
 
-Once the execution of the simulation is over, we can proceed to the analysis of the results.
-This step is done interactively using the [ParaView visualization software](https://www.paraview.org/), started from the MeluXina web-portal.
+Once the execution of the simulation is complete, the raw computational data becomes accessible for detailed analysis and interpretation. This transition from raw simulation output to meaningful visual insights is performed interactively using the [ParaView visualization software](https://www.paraview.org/). 
+
+To facilitate this process within the HPC environment, ParaView is launched directly from the MeluXina web-portal, allowing you to interact with the graphical interface in real-time from your local browser. This setup enables you to visualize complex flow fields, such as the urban wind patterns around the Philharmonie, without needing to install heavy software locally, manage complex remote display configurations, or even download the data to your laptop.
 
 ### Open ParaView
 
@@ -180,13 +185,11 @@ This step is done interactively using the [ParaView visualization software](http
 3. Wait for job to run and then click the **Launch ParaView** button as shown below.
 ![Paraview settings](images/ood_paraview_job.png){.center}
 
-You now have the ParaView software running on a MeluXina compute node. 
-The graphical interface is streamed in real time to your laptop. 
-You can use it as any other graphical application, but keep in mind that there can be some additional latency when using a busy Wi-Fi network.
+You now have the ParaView software running on a remote MeluXina compute node. Its graphical interface is streamed in real time to your laptop via the web browser, allowing you to interact with the visualization locally as if the application were installed on your machine. While the experience is generally smooth, please be aware that high network latency or a busy Wi-Fi connection may introduce slight delays or reduced responsiveness during complex interactions.
 
 ### Load the simulation results
 
-We will now open the results of the urban wind simulation in Paraview.
+We will now open the results of the urban wind simulation in ParaView to explore the simulated wind streamlines, pressure distributions, and velocity fields around the Philharmonie of Luxembourg. This interactive session allows you to inspect the high-resolution data generated by the HPC job, offering a visual insight that would be difficult to grasp from raw numerical output alone.
 
 👉 In the ParaView menu **File**, click on **Load State...**.
 
@@ -203,8 +206,8 @@ We will now open the results of the urban wind simulation in Paraview.
 Then, make sure to use the settings below and click **OK**.
 ![Paraview load state](images/paraview_load_state-2.png){.center}
 
-A simple 3D model of the Place de l'Europe and of the Philharmonie will open. 
-It will show the simulated wind streamlines and wind speed.
+A simple 3D model of the [Place de l'Europe and of the Philharmonie](http://g-o.lu/3/zqKc0) will open. 
+It will show the simulated wind streamlines and wind velocity.
 You can change the view, zoom-in and zoom-out to explore the simulation output.
 
 ![Urban Wind around the Philharmonie in Paraview](images/paraview_philharmonie.png){.center}
@@ -217,11 +220,13 @@ You can change the view, zoom-in and zoom-out to explore the simulation output.
 
 ### Create a video of the results
 
-Finally, we generate a video of the urban wind simulation.
+To effectively communicate the dynamic nature of the urban wind simulation, we will generate a video recording that captures the movement of wind streamlines  and velocity fields around the Philharmonie of Luxembourg. This visual summary transforms the static 3D model into an animation, making the complex fluid dynamics easier to interpret and share.
+
+Once you have explored the simulation results, you can create this video directly within the ParaView interface.
 
 👉 In the Paraview menu **File**, click on **Save Animation...**
 
-![](images/paraview_animation-1.png){.center}
+![Paraview save animation](images/paraview_animation-1.png){.center}
 
 Follow the settings below:
 
@@ -229,11 +234,11 @@ Follow the settings below:
 - Use a meaningful filename, e.g., `philharmonie-wind-meluxina.avi`.
 - Select the file type **FFMPEG AVI**.
 
-![](images/paraview_animation-2.png){.center}
+![Paraview save animation](images/paraview_animation-2.png){.center}
 
 In the animation options, use a frame rate of *5* images per seconds.
 
-![](images/paraview_animation-3.png){.center}
+![Paraview save animation](images/paraview_animation-3.png){.center}
 
 ParaView will now take a bit of time to generate all the frames of the video and save it.
 
@@ -242,8 +247,8 @@ ParaView will now take a bit of time to generate all the frames of the video and
 
 ## ▶️ Download the final output
 
-After completion of the animation generation, the video is saved on your MeluXina data storage.
-You can now use the file explorer of the web-portal to navigate and download your files.
+After the animation generation completes, the resulting video file is permanently stored on your MeluXina data storage.
+This file remains available for retrieval and can be accessed by using the file explorer provided within the web-portal to navigate through your directories and initiate the download process.
 
 👉 Download the video of the simulation results to your laptop.
 
