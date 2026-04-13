@@ -5,7 +5,7 @@
 ![Wind on the Philharmonie](images/philharmonie-rt.png)
 
 In this part, you will get a quick overview of an HPC workflow. 
-Your will work with a simplified example of a Computational Fluid Dynamics (CFD) simulation of the **urban wind around the Philharmonie of Luxembourg**.
+You will work with a simplified example of a Computational Fluid Dynamics (CFD) simulation of the **urban wind around the Philharmonie of Luxembourg**.
 This workflow is designed for you to practice the different ways to access and use the [MeluXina supercomputer](https://docs.lxp.lu/system/overview/). 
 You will proceed to the following steps:
 
@@ -13,10 +13,12 @@ You will proceed to the following steps:
 2. [Step 2: Visualize and post-process the simulation result interactively](#post-processing-the-simulation-output)
 3. [Step 3: Download the final post-processed results on your laptop](#download-the-final-output)
 
+---
+
 ## ▶️ Submit of a parallel CFD simulation & monitor execution
 
-The execution of large parallel computing job is usually done in **non-interactive mode** (or batch) using a submission script.
-In this manner, the computation job is queued for execution on system and will be executed as soon as resource are available.
+The execution of large parallel computing jobs is usually done in **non-interactive mode** (or batch) using a submission script.
+In this manner, the computation job is queued for execution on the system and will be executed as soon as resources are available.
 Hence, the user does not have to stay connected during the actual execution which can take place at any time (e.g., night or week-end).
 
 This step is done using the shell access via a terminal.
@@ -27,7 +29,7 @@ This step is done using the shell access via a terminal.
 
 !!! tip
 
-    You can use your prefered method among the of the two options configured in the [previous part](connections_meluxina.md):
+    You can use your preferred method among the two options configured in the [previous part](connections_meluxina.md):
     
     - [Direct shell access via SSH](connections_meluxina.md#command-line-access-using-ssh)
     - [Shell access via the web-portal](connections_meluxina.md#web-portal-access)
@@ -49,7 +51,7 @@ sbatch /project/home/p201259/materials/14April_GettingStartedWithMeluXina/wind_p
 
     To avoid mistake, simply copy the line above and paste it in the MeluXina terminal. Then press `Enter` to execute the command.
     
-    If succesfull, you should see something like this:
+    If successful, you should see something like this:
     ```
     Submitted batch job 4472627
     ```
@@ -140,7 +142,7 @@ squeue
     The output of `squeue` shows information about your current jobs in the queue:
     ![`squeue` output](images/squeue_output.png){.center}
     
-    The field `STATE` indicate the current status of the job. It typically goes from:
+    The `STATE` field indicates the current status of the job. It typically goes from:
     ```mermaid
     flowchart LR
         PENDING --> CONFIGURING --> RUNNING
@@ -148,10 +150,12 @@ squeue
         RUNNING --> FAILED
     ```
     
-    After some time, the finished jobs (i.e., `COMPLETED` or `FAILED`) disapear from the list.
+    After some time, the finished jobs (i.e., `COMPLETED` or `FAILED`) disappear from the list.
 
 👉 Monitor the execution of your job until it is finished. Then you can continue to the next step.
 
+
+---
 
 ## ▶️ Post-processing the simulation output
 
@@ -178,13 +182,13 @@ This step is done interactively using the [ParaView visualization software](http
 
 You now have the ParaView software running on a MeluXina compute node. 
 The graphical interface is streamed in real time to your laptop. 
-You can use it as any other graphical application, but keep in mind that there can be some additional latency when using a busy wifi network.
+You can use it as any other graphical application, but keep in mind that there can be some additional latency when using a busy Wi-Fi network.
 
 ### Load the simulation results
 
 We will now open the results of the urban wind simulation in Paraview.
 
-👉 In the Paraview menu **File**, click on **Load State...**
+👉 In the ParaView menu **File**, click on **Load State...**.
 
 ![Paraview load state](images/paraview_load_state-1.png){.center}
 
@@ -223,7 +227,7 @@ Follow the settings below:
 
 - Remember the directory in which you save the animation.
 - Use a meaningful filename, e.g., `philharmonie-wind-meluxina.avi`.
-- Select the the file type **FFMPEG AVI**.
+- Select the file type **FFMPEG AVI**.
 
 ![](images/paraview_animation-2.png){.center}
 
@@ -231,12 +235,15 @@ In the animation options, use a frame rate of *5* images per seconds.
 
 ![](images/paraview_animation-3.png){.center}
 
-Paraview will now take a bit of time to generate all the frames of the videos and save the video.
+ParaView will now take a bit of time to generate all the frames of the video and save it.
 
+
+---
 
 ## ▶️ Download the final output
 
 After completion of the animation generation, the video is saved on your MeluXina data storage.
+You can now use the file explorer of the web-portal to navigate and download your files.
 
 👉 Download the video of the simulation results to your laptop.
 
@@ -244,7 +251,7 @@ In the [MeluXina web-portal](https://portal.lxp.lu/), use the menu **Files** and
 
 ![](images/ood_download-1.png){.center}
 
-Navigate through your files and open the directory that your used earlier to save the animation.
+Navigate through your files and open the directory that you used earlier to save the animation.
 
 ![](images/ood_download-2.png){.center}
 
