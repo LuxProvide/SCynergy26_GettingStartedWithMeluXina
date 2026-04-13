@@ -23,10 +23,10 @@ Today's training is composed of:
     - HPC and HPC platforms
     - How to use an HPC system
     - The specifics of MeluXina supercomputer
-- A **hands-on** session with three activities (50 minutes)
+- A **hands-on session** with three activities with MeluXina supercomputer (50 minutes)
     - First connections to MeluXina
     - HPC workflow: Urban wind simulation and visualization
-    - AI workflow: PyTorch notebooks with JupyterLab on MeluXina
+    - AI workflow: PyTorch notebooks with JupyterLab
 
 
 
