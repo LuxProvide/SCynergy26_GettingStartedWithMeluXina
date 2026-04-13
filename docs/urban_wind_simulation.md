@@ -106,7 +106,7 @@ echo "== Finished job ${SLURM_JOBID} at $(date)"
 
 ![](images/ood_download-2.png){.center}
 
-![](images/philharmonie-logo-rt.gif){.center}
+![](images/philharmonie-wind-meluxina.gif){.center}
 
 
 
