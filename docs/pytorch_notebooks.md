@@ -29,7 +29,7 @@ Similar to ParaView, JupyterLab is started from the MeluXina web-portal, allowin
     ![JupyterLab settings](images/ood_jupyter_settings.png){.center}
     !!! warning "Your Python Virtual Environment Path"
     
-        The setting "Your Python Virtual Environment Path" define a path to your own Python virtual environment (`venv`), new or existing. You should set it to a path where you have write permission.
+        The setting "Your Python Virtual Environment Path" defines a path to your own Python virtual environment (`venv`), new or existing. You should set it to a path where you have write permission.
         
         You can use the value `/project/home/p201259/workspaces/u10XXXX/venv-sc26-pytorch/` making sure to replace `u10XXXX` by your own username.
 
@@ -39,15 +39,15 @@ Similar to ParaView, JupyterLab is started from the MeluXina web-portal, allowin
 You now have JupyterLab software running on a MeluXina compute node.
 You can use it to import and execute Jupyter Notebook (in Python, R, Julia, etc.) or develop your own.
 
-Before opening any notebook, let's change to working directory. To avoid any conflict with the other users of the same project, we can create our working directory in `/project/home/p201259/workspaces/u10XXXX/pytorch_notebooks/` ( replace `u10XXXX` by your own username).
+Before opening any notebook, let's set the working directory. To avoid any conflicts with other users of the same project, create a working directory in `/project/home/p201259/workspaces/u10XXXX/pytorch_notebooks/` (replace `u10XXXX` with your own username).
 
 👉 Set your working directory in JupyterLab
 
-1. In the JupyterLab file browser at the top left, navigate to `/p201259/workspaces/u10XXXX`
+1. In the JupyterLab file browser at the top left, navigate to `/p201259/workspaces/u10XXXX`.
 
     ![JupyterLab working directory](images/ood_jupyter_working_directory.png){.center}
 
-2. Create a new directory `pytorch_notebook` and move into it.
+2. Create a new directory named `pytorch_notebooks` and navigate into it.
 
 You're now ready to work on the next steps.
 
@@ -65,14 +65,14 @@ It is one of the official PyTorch tutorials that you can find here:
 
 This notebook uses the CIFAR10 dataset and trains a model to recognize objects classes: ‘airplane’, ‘automobile’, ‘bird’, ‘cat’, ‘deer’, ‘dog’, ‘frog’, ‘horse’, ‘ship’, ‘truck’. For more details, you can refer to the content of the tutorial itself.
 
-The notebook can be downloaded on the [page of the tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html) by clicking on the top button **Download Notebook**
+The notebook can be downloaded from the [page of the tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html) by clicking on the top button **Download Notebook**.
 
 ![Download Notebook](images/download_notebook.png){.center}
 
 
 👉 Open the "Training a Classifier" notebook in JupyterLab
 
-1. In JupyterLab, go to the menu **File** and click **Open from URL...**
+1. In JupyterLab, go to the menu **File** and click **Open from URL...**.
 
     ![JupyterLab Open URL](images/jupyter_open_url.png){.center}
 
@@ -116,14 +116,14 @@ We will follow an approach similar to the previous one.
 
 👉 Open the "TorchVision Object Detection Finetuning" notebook in JupyterLab
 
-1. In JupyterLab, go to the menu **File** and click **Open from URL...**
+1. In JupyterLab, go to the menu **File** and click **Open from URL...**.
 
     ![JupyterLab Open URL](images/jupyter_open_url.png){.center}
 
 2. Paste the URL of the PyTorch notebook:
 
     ```
-   https://docs.pytorch.org/tutorials/_downloads/4a542c9f39bedbfe7de5061767181d36/torchvision_tutorial.ipynb
+    https://docs.pytorch.org/tutorials/_downloads/4a542c9f39bedbfe7de5061767181d36/torchvision_tutorial.ipynb
     ```
 
 3. In the top menu **Kernel**, click on **Change Kernel...**. Then select the pre-configured PyTorch kernel **Python (venv-sc26-pytorch)**. 
@@ -136,7 +136,7 @@ We will follow an approach similar to the previous one.
 
 !!! tip "Additional Python modules"
 
-    This second notebook requires the installation of an additional Python module to run through. 
+    This second notebook requires the installation of an additional Python module to run successfully.
     To do that, you can create a new cell at the top of the notebook with the following content:
 
     ```python
