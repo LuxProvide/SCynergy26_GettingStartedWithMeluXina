@@ -54,8 +54,7 @@ Today's training is composed of:
         - User and project accounts
         - Data storage
         - Authentication
-        - Terminal access
-        - Web-portal access
+        - Shell & web-portal access
 
 
 ---
