@@ -45,6 +45,7 @@ plugins:
     - progress
     - include-markdown
     - open-in-new-tab
+    - glightbox
 
 extra_css:
     - stylesheets/extra.css
