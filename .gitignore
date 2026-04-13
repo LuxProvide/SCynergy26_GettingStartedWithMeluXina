@@ -1,4 +1,5 @@
 /public/
 /venv/
 *.backup
+/materials/
 
