@@ -117,7 +117,7 @@ ssh meluxina
 
 If the connection is successful, you should see the MeluXina welcome banner:
 
-![MeluXina welcome banner](images/meluxina_banner.png){: .center}
+![MeluXina welcome banner](images/meluxina_banner.png){.center}
 
 The shell prompt (last line on the terminal) should indicate that you're correctly connected to the MeluXina login node (`login02` or `login03`) as the user `u10XXXX`.
 
