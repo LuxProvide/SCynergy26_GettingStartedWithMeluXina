@@ -10,7 +10,7 @@ This hands-on workflow is specifically designed for you to practice the essentia
 You will complete the following steps:
 
 1. [Step 1: Submit a batch job for a parallel CFD simulation and monitor its execution](#submit-of-a-parallel-cfd-simulation-monitor-execution)
-2. [Step 2: Visualize and post-process the simulation result interactively](#post-processing-the-simulation-output)
+2. [Step 2: Visualize and post-process the simulation result interactively](#analyze-and-post-process-the-simulation-output)
 3. [Step 3: Download the final post-processed results on your laptop](#download-the-final-output)
 
 ---
@@ -161,7 +161,7 @@ squeue
 
 ---
 
-## ▶️ Post-processing the simulation output
+## ▶️ Analyze and post-process the simulation output
 
 Once the execution of the simulation is complete, the raw computational data becomes accessible for detailed analysis and interpretation. This transition from raw simulation output to meaningful visual insights is performed interactively using the [ParaView visualization software](https://www.paraview.org/). 
 
