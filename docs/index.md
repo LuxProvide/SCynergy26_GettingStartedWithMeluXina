@@ -2,9 +2,12 @@
 
 # Getting Started with MeluXina
 
-This training is given in the context of the [Scynergy 2026 event](https://www.scynergy.events/). It provides participants with a quick overview of the different ways to access and use the [MeluXina supercomputer](https://docs.lxp.lu/system/overview/).
+**Getting Started with MeluXina** is a beginner‑friendly, hands‑on training that introduces participants to the [MeluXina supercomputer](https://docs.lxp.lu/system/overview/). Delivered by [LuxProvide](https://luxprovide.lu/) during [SCynergy 2026 event](https://www.scynergy.events/), and supported by the [EPICURE project](https://epicure-hpc.eu/), the session covers essential HPC concepts and guides users through account setup, secure authentication, SSH access, Open OnDemand, JupyterLab, and file transfers. By the end of the training, participants will have a fully working environment and be ready to run workloads and attend more advanced MeluXina trainings.
 
 ![](images/meluxina.jpg){ width="800" }
+
+[![EPICURE](./assets/logo_epicure.png){ width="420" }](https://epicure-hpc.eu/)
+[![LuxProvide](./assets/logo_luxprovide.png){ width="320" }](https://luxprovide.lu)
 
 ---
 
@@ -72,5 +75,5 @@ Today's training is composed of:
 
 It has been developed by the **Supercomputing Application Services** group at [**LuxProvide**](https://luxprovide.lu) in the context of the [**EPICURE project**](https://epicure-hpc.eu/).
 
-[![EPICURE](./assets/logo_epicure.png){ width="420" }](https://epicure-hpc.eu/) 
+[![EPICURE](./assets/logo_epicure.png){ width="420" }](https://epicure-hpc.eu/)
 [![LuxProvide](./assets/logo_luxprovide.png){ width="320" }](https://luxprovide.lu)
